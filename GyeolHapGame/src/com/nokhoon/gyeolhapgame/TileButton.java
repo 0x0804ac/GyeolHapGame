@@ -22,9 +22,9 @@ public class TileButton extends JToggleButton {
 	public static final int ID_TRIANGLE = 2;
 	public static final Polygon TRIANGLE = new Polygon(new int[] {15, 45, 75}, new int[] {70, 20, 70}, 3);
 	
-	private Color background;
-	private Color foreground;
-	private int shape;
+	private final Color background;
+	private final Color foreground;
+	private final int shape;
 	
 	public static final ArrayList<TileButton> TILES;
 	

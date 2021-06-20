@@ -34,7 +34,7 @@ public class TilePanel extends JPanel {
 			removeAll();
 		}
 		ArrayList<TileButton> list = (ArrayList<TileButton>) TileButton.TILES.clone();
-		Random rng = new Random(System.currentTimeMillis() ^ 0x0804ac);
+		Random rng = new Random(System.currentTimeMillis() ^ 0x0804acL);
 		Collections.shuffle(list, rng);
 		for(int i = 0; i < 9; ++i) {
 			TileButton btn = list.remove(rng.nextInt(list.size()));
